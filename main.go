@@ -20,7 +20,7 @@ func CorsMiddleware(next http.Handler) http.Handler {
 
 func main() {
 	// Load configuration
-	config := config.LoadDatabaseConfig(".env.inmemory")
+	config := config.LoadDatabaseConfig(".env")
 
 	var userRepo user.UserRepository
 
